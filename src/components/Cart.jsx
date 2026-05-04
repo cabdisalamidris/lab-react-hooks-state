@@ -4,9 +4,9 @@ function Cart({ cart }) {
   return (
     <div>
       <h2>Shopping Cart</h2>
-        {cart.map((item,index) => (
-          <p key={index}>{item.name} is in your cart.</p>
-        ))}
+      {cart.map((item) => (
+  <p key={item.id}>{item.name} is in your cart.</p>
+    ))}
     </div>
   );
 }
